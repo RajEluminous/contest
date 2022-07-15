@@ -1,0 +1,251 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 400;
+    font-family: "PT Serif", serif;
+}
+img {
+    max-width: 100%;
+}
+a {
+    color: #2b8dd9;
+}
+a:hover {
+    text-decoration: none;
+}
+section {
+    padding: 5rem 0;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+.hero {
+    background: url("../img/cover.jpeg") no-repeat bottom center;
+    background-size: cover;
+    padding: 3rem 0;
+}
+.logo {
+    width: 100px;
+}
+.hero h1 {
+    font-size: 3.75rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 0;
+    color: #40617e;
+    margin-bottom: 5rem;
+}
+.hero h3 {
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+}
+.hero h3::before {
+    content: " ";
+    width: 60px;
+    height: 1px;
+    background-color: #333;
+    position: absolute;
+    left: -80px;
+    top: 50%;
+}
+.hero h3::after {
+    content: " ";
+    width: 60px;
+    height: 1px;
+    background-color: #333;
+    position: absolute;
+    right: -80px;
+    top: 50%;
+}
+.sales-line {
+    width: 30px;
+    height: 1px;
+    background-color: #c4c4c4;
+    margin: 3px 1rem 0 1rem;
+}
+.sales-prize {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4097e1;
+}
+.sales-prize span {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.bg-contest {
+    background-color: #f7fbff;
+}
+.table-responsive > div {
+    background-color: #f7fbff !important;
+}
+.bg-contest .bg-blue {
+    background-color: transparent;
+}
+.bg-contest .ldrbrd_date {
+    font-size: 1.3rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.bg-contest .ldrbrd_counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.65rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: #555;
+}
+.bg-contest .ldrbrd_counter .ldrbrd_digit {
+    color: #4097e1;
+    font-weight: 700;
+    font-size: 3.75rem;
+    margin-right: 0.5rem;
+    margin-left: 2rem;
+}
+.bg-contest .ldrbrd_counter .ldrbrd_digit:first-of-type {
+    margin-left: 0;
+}
+.bg-contest div[id^="ldrbrd_main"] {
+    background-color: transparent !important;
+    margin-top: 2rem;
+}
+.bg-contest div[id^="ldrbrd_main"] .bg-info {
+    background-color: #d7ecfe !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #003333;
+}
+.bg-contest .ldrbrd_container {
+    border-bottom: none;
+}
+.bg-contest .ldrbrd_container:nth-child(odd) {
+    background-color: #f7fbff !important;
+}
+.bg-contest .ldrbrd_container:nth-child(even) {
+    background-color: #fff !important;
+}
+
+footer {
+    background-color: #fff;
+    color: #333;
+}
+footer a {
+    color: #333;
+}
+
+/* Helper classes */
+.fs-xs {
+    font-size: 1rem;
+}
+.fs-40 {
+    font-size: 2.6rem;
+    line-height: 1.6;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.mb-6 {
+    margin-bottom: 4rem !important;
+}
+.mb-7 {
+    margin-bottom: 5rem !important;
+}
+.mb-8 {
+    margin-bottom: 6rem !important;
+}
+.w-40 {
+    width: 40%;
+}
+.w-30 {
+    width: 30%;
+}
+.btn {
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+.btn-primary {
+    background-color: #4097e1;
+}
+.btn-primary-alt {
+    background-color: #6a92b4;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #4097e1;
+    opacity: 0.9;
+}
+.btn-primary-alt:hover {
+    background-color: #6a92b4;
+    color: #fff;
+    opacity: 0.9;
+}
+
+@media (max-width: 767px) {
+    section {
+        padding: 3rem 0;
+    }
+    .hero {
+        padding: 3rem 0;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .hero h3 {
+        font-size: 1rem;
+    }
+    .hero h3::before {
+        width: 30px;
+        left: -40px;
+    }
+    .hero h3::after {
+        width: 30px;
+        right: -40px;
+    }
+    .sales-prize {
+        font-size: 1.5rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+    }
+    .table-responsive > div {
+        width: 100% !important;
+    }
+    .bg-contest .ldrbrd_counter {
+        font-size: 0.75rem;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    .bg-contest .ldrbrd_counter .ldrbrd_digit {
+        font-size: 1.25rem;
+        margin-left: 0.5rem;
+        margin-right: 0.25rem;
+    }
+    .bg-contest .ldrbrd_date {
+        font-size: 0.79rem;
+        margin-bottom: 0.5rem;
+    }
+    .fs-xs {
+        font-size: 0.8rem;
+    }
+    footer {
+        font-size: 1rem;
+    }
+}
